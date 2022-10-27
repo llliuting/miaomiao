@@ -1,16 +1,23 @@
 <template>
-  <div>
-    hello movie
+  <div id="main">
+    <Header />
+    <Tabbar />
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header'
+import Tabbar from '@/components/Tabbar'
 export default {
   // 组件名称
   name: 'Movie',
   data () {
     return {}
   },
+  components: {
+    Header,
+    Tabbar
+  }
 }
 </script> 
 
